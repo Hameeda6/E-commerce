@@ -1,0 +1,80 @@
+/* header layout */
+.headerbutton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:white;
+    color: blue;
+    position:fixed;
+    width:98%;
+    top:0;
+    z-index:1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .headerbutton h3 {
+    margin: 0;
+    color:#1B2559;
+    font-weight: bolder;
+  }
+  
+  .headerbutton button {
+    /* background-color: transparent; */
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px; 
+    margin: 0 10px; 
+    font-size: 16px; 
+    outline: none;
+  }
+  
+  .headerbuttoncenter button,.login-button {
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px; 
+    margin: 0 10px; 
+    font-size: 16px; 
+    outline: none;
+  }
+  .signup-button{
+    border-radius: 10px;
+    background-color: rgb(123, 177, 228);
+    color: rgb(74, 101, 184);
+  }
+  .headerbutton button:hover {
+    background-color: rgba(255, 255, 255, 0.317);
+  }
+  
+  .headerbuttoncenter {
+    color: white; 
+    font-size: 14px; 
+    font-family: Plus Jakarta Sans; 
+    font-weight: 600; 
+    line-height: 14px; 
+    word-wrap: break-word;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .headerbuttoncenter span {
+    cursor: pointer;
+    margin: 0 10px; 
+  }
+  
+  .headerbuttoncenter button {
+    margin: 0 5px;
+  }
+  
+  /* .headerbuttonend button{
+    margin-left: 2vh;
+  } */
+  
+  .headerbuttonend span {
+    cursor: pointer;
+    /* margin: 0 10px;  */
+  }

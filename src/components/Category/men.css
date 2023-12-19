@@ -1,0 +1,111 @@
+
+.men-container {
+  padding: 0 15vh;
+}
+
+h2 {
+  text-align: center; 
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  }
+  
+  li {
+    margin: 10px;
+  text-align: center;
+  position: relative;
+  flex: 0 0 calc(31% - 20px);
+  }
+  
+  img {
+    max-width: 100%;
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  img:hover {
+    transform: scale(1.1); 
+  }
+  
+  .men-product{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .men-tshirts-list {
+    list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  }
+  
+  .men-tshirt-card {
+    margin: 50px 10px;
+  text-align: center;
+  width:100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .men-tshirt-card-content {
+    padding: 10px;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+
+  .price {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* popup */
+  
+  .popup {
+    position: absolute;
+    bottom: -100%; /* Position right below the card */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Ensure the popup appears above other elements */
+  }
+  
+  .popup p {
+    margin: 0;
+  }
+  
+  .popup button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
+  .popup button:hover {
+    background-color: #2980b9;
+  }
