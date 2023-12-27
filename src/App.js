@@ -8,6 +8,7 @@ import Men from './components/Category/men';
 import Women from './components/Category/women';
 import Cart from './components/Cart';
 import Checkout from './components/Checkout';
+import ProductDetails from './components/ProductDetails';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -40,13 +41,14 @@ function App() {
           <Route path="/men" element={<Men addToCart={addToCart} />} />
           <Route path="/women" element={<Women />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/product-details/:productId" element={<ProductDetails addToCart={addToCart} />} />
         </Routes>
 
         {/* {isCartOpen && <Cart cartItems={cartItems} updateCartItems={setCartItems} closeCart={closeCart} />} */}
         {isCartOpen && window.location.pathname !== '/checkout' && (
           <Cart cartItems={cartItems} updateCartItems={setCartItems} closeCart={closeCart} />
         )}
-        
+       
       </div>
     </Router>
   );
